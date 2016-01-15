@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D4BAD721C48D9920066DF10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BAD711C48D9920066DF10 /* AppDelegate.swift */; };
-		3D4BAD741C48D9920066DF10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BAD731C48D9920066DF10 /* ViewController.swift */; };
-		3D4BAD771C48D9920066DF10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BAD751C48D9920066DF10 /* Main.storyboard */; };
-		3D4BAD791C48D9920066DF10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BAD781C48D9920066DF10 /* Assets.xcassets */; };
-		3D4BAD7C1C48D9920066DF10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BAD7A1C48D9920066DF10 /* LaunchScreen.storyboard */; };
 		3D4BAD871C48D9920066DF10 /* MyQiitaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BAD861C48D9920066DF10 /* MyQiitaTests.swift */; };
 		3D4BAD921C48D9920066DF10 /* MyQiitaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BAD911C48D9920066DF10 /* MyQiitaUITests.swift */; };
+		3D4BADAA1C48DAB40066DF10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BADA91C48DAB40066DF10 /* AppDelegate.swift */; };
+		3D4BADAC1C48DB000066DF10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BADAB1C48DB000066DF10 /* ViewController.swift */; };
+		3D4BADB11C48DB6F0066DF10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BADAD1C48DB6F0066DF10 /* LaunchScreen.storyboard */; };
+		3D4BADB21C48DB6F0066DF10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BADAF1C48DB6F0066DF10 /* Main.storyboard */; };
+		3D4BADB41C48DB7E0066DF10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BADB31C48DB7E0066DF10 /* Assets.xcassets */; };
+		3D4BADB61C48DB880066DF10 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BADB51C48DB880066DF10 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +36,18 @@
 
 /* Begin PBXFileReference section */
 		3D4BAD6E1C48D9920066DF10 /* MyQiita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyQiita.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D4BAD711C48D9920066DF10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D4BAD731C48D9920066DF10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D4BAD761C48D9920066DF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D4BAD781C48D9920066DF10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3D4BAD7B1C48D9920066DF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3D4BAD7D1C48D9920066DF10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D4BAD821C48D9920066DF10 /* MyQiitaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyQiitaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4BAD861C48D9920066DF10 /* MyQiitaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQiitaTests.swift; sourceTree = "<group>"; };
 		3D4BAD881C48D9920066DF10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D4BAD8D1C48D9920066DF10 /* MyQiitaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyQiitaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4BAD911C48D9920066DF10 /* MyQiitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQiitaUITests.swift; sourceTree = "<group>"; };
 		3D4BAD931C48D9920066DF10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D4BADA91C48DAB40066DF10 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D4BADAB1C48DB000066DF10 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D4BADAE1C48DB6F0066DF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D4BADB01C48DB6F0066DF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D4BADB31C48DB7E0066DF10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D4BADB51C48DB880066DF10 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +98,8 @@
 		3D4BAD701C48D9920066DF10 /* MyQiita */ = {
 			isa = PBXGroup;
 			children = (
-				3D4BAD711C48D9920066DF10 /* AppDelegate.swift */,
-				3D4BAD731C48D9920066DF10 /* ViewController.swift */,
-				3D4BAD751C48D9920066DF10 /* Main.storyboard */,
-				3D4BAD781C48D9920066DF10 /* Assets.xcassets */,
-				3D4BAD7A1C48D9920066DF10 /* LaunchScreen.storyboard */,
-				3D4BAD7D1C48D9920066DF10 /* Info.plist */,
+				3D4BADA31C48DA590066DF10 /* Code */,
+				3D4BADA81C48DA590066DF10 /* Resource */,
 			);
 			path = MyQiita;
 			sourceTree = "<group>";
@@ -123,6 +120,66 @@
 				3D4BAD931C48D9920066DF10 /* Info.plist */,
 			);
 			path = MyQiitaUITests;
+			sourceTree = "<group>";
+		};
+		3D4BADA31C48DA590066DF10 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				3D4BADA71C48DA590066DF10 /* Presentation */,
+				3D4BADA41C48DA590066DF10 /* Application */,
+				3D4BADA51C48DA590066DF10 /* Domain */,
+				3D4BADA61C48DA590066DF10 /* Infrastructure */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		3D4BADA41C48DA590066DF10 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3D4BADA91C48DAB40066DF10 /* AppDelegate.swift */,
+				3D4BADAB1C48DB000066DF10 /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3D4BADA51C48DA590066DF10 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3D4BADA61C48DA590066DF10 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3D4BADA71C48DA590066DF10 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3D4BADA81C48DA590066DF10 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3D4BADB71C48DBC10066DF10 /* Storyboard */,
+				3D4BADB51C48DB880066DF10 /* Info.plist */,
+				3D4BADB31C48DB7E0066DF10 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3D4BADB71C48DBC10066DF10 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3D4BADAD1C48DB6F0066DF10 /* LaunchScreen.storyboard */,
+				3D4BADAF1C48DB6F0066DF10 /* Main.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +286,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4BAD7C1C48D9920066DF10 /* LaunchScreen.storyboard in Resources */,
-				3D4BAD791C48D9920066DF10 /* Assets.xcassets in Resources */,
-				3D4BAD771C48D9920066DF10 /* Main.storyboard in Resources */,
+				3D4BADB61C48DB880066DF10 /* Info.plist in Resources */,
+				3D4BADB11C48DB6F0066DF10 /* LaunchScreen.storyboard in Resources */,
+				3D4BADB41C48DB7E0066DF10 /* Assets.xcassets in Resources */,
+				3D4BADB21C48DB6F0066DF10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4BAD741C48D9920066DF10 /* ViewController.swift in Sources */,
-				3D4BAD721C48D9920066DF10 /* AppDelegate.swift in Sources */,
+				3D4BADAC1C48DB000066DF10 /* ViewController.swift in Sources */,
+				3D4BADAA1C48DAB40066DF10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,20 +351,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3D4BAD751C48D9920066DF10 /* Main.storyboard */ = {
+		3D4BADAD1C48DB6F0066DF10 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3D4BAD761C48D9920066DF10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3D4BAD7A1C48D9920066DF10 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D4BAD7B1C48D9920066DF10 /* Base */,
+				3D4BADAE1C48DB6F0066DF10 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3D4BADAF1C48DB6F0066DF10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D4BADB01C48DB6F0066DF10 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -397,7 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MyQiita/Info.plist;
+				INFOPLIST_FILE = MyQiita/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.naoty.MyQiita;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,7 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MyQiita/Info.plist;
+				INFOPLIST_FILE = MyQiita/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.naoty.MyQiita;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +540,7 @@
 				3D4BAD981C48D9920066DF10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D4BAD991C48D9920066DF10 /* Build configuration list for PBXNativeTarget "MyQiitaTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +549,7 @@
 				3D4BAD9B1C48D9920066DF10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D4BAD9C1C48D9920066DF10 /* Build configuration list for PBXNativeTarget "MyQiitaUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +558,7 @@
 				3D4BAD9E1C48D9920066DF10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
