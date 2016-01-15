@@ -15,6 +15,7 @@
 		3D4BADB91C491EA80066DF10 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BADB81C491EA80066DF10 /* ItemsViewController.swift */; };
 		3D4BADBB1C491ECE0066DF10 /* Items.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BADBA1C491ECE0066DF10 /* Items.storyboard */; };
 		3D4BADBF1C49200D0066DF10 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BADBE1C49200D0066DF10 /* Item.swift */; };
+		3D4BADC11C495D2D0066DF10 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4BADC01C495D2D0066DF10 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3D4BADB81C491EA80066DF10 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		3D4BADBA1C491ECE0066DF10 /* Items.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Items.storyboard; sourceTree = "<group>"; };
 		3D4BADBE1C49200D0066DF10 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3D4BADC01C495D2D0066DF10 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4BADC11C495D2D0066DF10 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				3D4BAD851C48D9920066DF10 /* MyQiitaTests */,
 				3D4BAD901C48D9920066DF10 /* MyQiitaUITests */,
 				3D4BAD6F1C48D9920066DF10 /* Products */,
+				3D4BADC21C495D320066DF10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,6 +188,14 @@
 			name = Storyboard;
 			sourceTree = "<group>";
 		};
+		3D4BADC21C495D320066DF10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D4BADC01C495D2D0066DF10 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,6 +206,7 @@
 				3D4BAD6A1C48D9920066DF10 /* Sources */,
 				3D4BAD6B1C48D9920066DF10 /* Frameworks */,
 				3D4BAD6C1C48D9920066DF10 /* Resources */,
+				3D4BADC31C495D6B0066DF10 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -309,6 +322,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D4BADC31C495D6B0066DF10 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D4BAD6A1C48D9920066DF10 /* Sources */ = {
@@ -449,6 +479,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyQiita/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.naoty.MyQiita;
@@ -460,6 +494,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyQiita/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.naoty.MyQiita;
