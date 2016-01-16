@@ -7,22 +7,23 @@
 //
 
 import Foundation
+import SwiftTask
 
 protocol Repository {
     typealias Domain
     
-    func list() -> [Domain]
-    func find(id: Int) -> Domain?
+    func list() -> Task<Void, [Domain], NSError>
+    func find(id: Int) -> Task<Void, Domain, NSError>
 }
 
 extension Repository {
-    func list() -> [Domain] {
-        assertionFailure("Not implemented.")
-        return []
+    func list() -> Task<Void, [Domain], NSError> {
+        assertionFailure("Not implemented")
+        return Task(error: NSError(domain: "", code: 0, userInfo: nil))
     }
     
-    func find(id: Int) -> Domain? {
+    func find(id: Int) -> Task<Void, Domain, NSError> {
         assertionFailure("Not implemented")
-        return nil
+        return Task(error: NSError(domain: "", code: 0, userInfo: nil))
     }
 }

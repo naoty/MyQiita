@@ -10,20 +10,23 @@ import UIKit
 
 class ItemsViewController: UITableViewController {
     var items: [Item] = []
-
+    var repository = ItemsRepository()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        items.append(Item(title: "item 1"))
-//        items.append(Item(title: "item 2"))
-//        items.append(Item(title: "item 3"))
-//        items.append(Item(title: "item 4"))
-//        items.append(Item(title: "item 5"))
-        items = ItemsRepository().list()
+        repository.list().success(reloadItems)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    // MARK: -
+    
+    private func reloadItems(items: [Item]) {
+        self.items = items
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source

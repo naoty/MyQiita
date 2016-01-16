@@ -1,1 +1,2 @@
 github "Alamofire/Alamofire" "3.1.4"
+github "ReactKit/SwiftTask" "4.1.0"

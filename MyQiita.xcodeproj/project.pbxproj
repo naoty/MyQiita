@@ -18,6 +18,7 @@
 		3D4BADC11C495D2D0066DF10 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4BADC01C495D2D0066DF10 /* Alamofire.framework */; };
 		3D4BADC51C495ED40066DF10 /* ItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BADC41C495ED40066DF10 /* ItemsRepository.swift */; };
 		3D4BADC71C495F1F0066DF10 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BADC61C495F1F0066DF10 /* Repository.swift */; };
+		3DDC48951C4A9B3C00AC2390 /* SwiftTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDC48941C4A9B3C00AC2390 /* SwiftTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3D4BADC01C495D2D0066DF10 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		3D4BADC41C495ED40066DF10 /* ItemsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsRepository.swift; sourceTree = "<group>"; };
 		3D4BADC61C495F1F0066DF10 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		3DDC48941C4A9B3C00AC2390 /* SwiftTask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftTask.framework; path = Carthage/Build/iOS/SwiftTask.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDC48951C4A9B3C00AC2390 /* SwiftTask.framework in Frameworks */,
 				3D4BADC11C495D2D0066DF10 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +200,7 @@
 		3D4BADC21C495D320066DF10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DDC48941C4A9B3C00AC2390 /* SwiftTask.framework */,
 				3D4BADC01C495D2D0066DF10 /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -337,6 +341,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftTask.framework",
 			);
 			outputPaths = (
 			);
