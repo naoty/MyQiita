@@ -16,6 +16,8 @@
 		3D4BADBB1C491ECE0066DF10 /* Items.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BADBA1C491ECE0066DF10 /* Items.storyboard */; };
 		3D4BADBF1C49200D0066DF10 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BADBE1C49200D0066DF10 /* Item.swift */; };
 		3D4BADC11C495D2D0066DF10 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4BADC01C495D2D0066DF10 /* Alamofire.framework */; };
+		3D4BADC51C495ED40066DF10 /* ItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BADC41C495ED40066DF10 /* ItemsRepository.swift */; };
+		3D4BADC71C495F1F0066DF10 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BADC61C495F1F0066DF10 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3D4BADBA1C491ECE0066DF10 /* Items.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Items.storyboard; sourceTree = "<group>"; };
 		3D4BADBE1C49200D0066DF10 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3D4BADC01C495D2D0066DF10 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		3D4BADC41C495ED40066DF10 /* ItemsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsRepository.swift; sourceTree = "<group>"; };
+		3D4BADC61C495F1F0066DF10 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,8 @@
 		3D4BADA61C48DA590066DF10 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				3D4BADC61C495F1F0066DF10 /* Repository.swift */,
+				3D4BADC41C495ED40066DF10 /* ItemsRepository.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -347,6 +353,8 @@
 			files = (
 				3D4BADB91C491EA80066DF10 /* ItemsViewController.swift in Sources */,
 				3D4BADBF1C49200D0066DF10 /* Item.swift in Sources */,
+				3D4BADC71C495F1F0066DF10 /* Repository.swift in Sources */,
+				3D4BADC51C495ED40066DF10 /* ItemsRepository.swift in Sources */,
 				3D4BADAA1C48DAB40066DF10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

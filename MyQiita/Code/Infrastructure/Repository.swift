@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+protocol Repository {
+    typealias Domain
+    
+    func list() -> [Domain]
+    func find(id: Int) -> Domain?
+}
+
+extension Repository {
+    func list() -> [Domain] {
+        assertionFailure("Not implemented.")
+        return []
+    }
+    
+    func find(id: Int) -> Domain? {
+        assertionFailure("Not implemented")
+        return nil
+    }
+}

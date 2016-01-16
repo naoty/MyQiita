@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct ItemsRepository: Repository {
+    typealias Domain = Item
+}

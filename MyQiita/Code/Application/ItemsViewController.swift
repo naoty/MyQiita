@@ -14,11 +14,12 @@ class ItemsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        items.append(Item(title: "item 1"))
-        items.append(Item(title: "item 2"))
-        items.append(Item(title: "item 3"))
-        items.append(Item(title: "item 4"))
-        items.append(Item(title: "item 5"))
+//        items.append(Item(title: "item 1"))
+//        items.append(Item(title: "item 2"))
+//        items.append(Item(title: "item 3"))
+//        items.append(Item(title: "item 4"))
+//        items.append(Item(title: "item 5"))
+        items = ItemsRepository().list()
     }
 
     override func didReceiveMemoryWarning() {
