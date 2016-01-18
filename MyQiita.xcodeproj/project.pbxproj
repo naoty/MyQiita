@@ -20,6 +20,7 @@
 		3D4BADBB1C491ECE0066DF10 /* Items.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BADBA1C491ECE0066DF10 /* Items.storyboard */; };
 		3D4BADC11C495D2D0066DF10 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4BADC01C495D2D0066DF10 /* Alamofire.framework */; };
 		3DD5267E1C4C946F0056B756 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5267D1C4C946F0056B756 /* Error.swift */; };
+		3DD526841C4CD5B10056B756 /* UIAlertController+ErrorDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD526831C4CD5B10056B756 /* UIAlertController+ErrorDialog.swift */; };
 		3DDC48951C4A9B3C00AC2390 /* SwiftTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDC48941C4A9B3C00AC2390 /* SwiftTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		3D4BADBA1C491ECE0066DF10 /* Items.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Items.storyboard; sourceTree = "<group>"; };
 		3D4BADC01C495D2D0066DF10 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		3DD5267D1C4C946F0056B756 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		3DD526831C4CD5B10056B756 /* UIAlertController+ErrorDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ErrorDialog.swift"; sourceTree = "<group>"; };
 		3DDC48941C4A9B3C00AC2390 /* SwiftTask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftTask.framework; path = Carthage/Build/iOS/SwiftTask.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +182,7 @@
 			children = (
 				3D4BADA91C48DAB40066DF10 /* AppDelegate.swift */,
 				3D4BADB81C491EA80066DF10 /* ItemsViewController.swift */,
+				3DD526831C4CD5B10056B756 /* UIAlertController+ErrorDialog.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				3D3759FA1C4C928C0021F7CE /* Item.swift in Sources */,
 				3D3759F21C4C7FC40021F7CE /* Repository.swift in Sources */,
 				3D3759F11C4C7FC40021F7CE /* ItemsRepository.swift in Sources */,
+				3DD526841C4CD5B10056B756 /* UIAlertController+ErrorDialog.swift in Sources */,
 				3D4BADB91C491EA80066DF10 /* ItemsViewController.swift in Sources */,
 				3DD5267E1C4C946F0056B756 /* Error.swift in Sources */,
 				3D4BADAA1C48DAB40066DF10 /* AppDelegate.swift in Sources */,

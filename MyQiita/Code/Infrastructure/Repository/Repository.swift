@@ -18,12 +18,10 @@ protocol Repository {
 
 extension Repository {
     func list() -> Task<Void, [Domain], NSError> {
-        assertionFailure("Not implemented")
-        return Task(error: NSError(domain: "", code: 0, userInfo: nil))
+        fatalError("-list() is not implemented.")
     }
     
     func find(id: Int) -> Task<Void, Domain, NSError> {
-        assertionFailure("Not implemented")
-        return Task(error: NSError(domain: "", code: 0, userInfo: nil))
+        fatalError("-find(id:) is not implemented.")
     }
 }

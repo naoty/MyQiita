@@ -33,11 +33,15 @@ class ItemsViewController: UITableViewController {
     
     private func showErrorDescription(error: NSError?, isCanceled: Bool) {
         if isCanceled {
-            print(Error.errorWithCode(.RequestCanceled, failureReason: ""))
             return
         }
         
-        print(error ?? Error.errorWithCode(.SomethingWrong, failureReason: ""))
+        guard let error = error else {
+            return
+        }
+        
+        let alertController = UIAlertController(error: error)
+        presentViewController(alertController, animated: true, completion: nil)
     }
 
     // MARK: - Table view data source
