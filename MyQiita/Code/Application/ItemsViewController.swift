@@ -15,7 +15,9 @@ class ItemsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        repository.list().success(reloadItems)
+        repository.list()
+            .success(reloadItems)
+            .failure(showErrorDescription)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +29,15 @@ class ItemsViewController: UITableViewController {
     private func reloadItems(items: [Item]) {
         self.items = items
         tableView.reloadData()
+    }
+    
+    private func showErrorDescription(error: NSError?, isCanceled: Bool) {
+        if isCanceled {
+            print(Error.errorWithCode(.RequestCanceled, failureReason: ""))
+            return
+        }
+        
+        print(error ?? Error.errorWithCode(.SomethingWrong, failureReason: ""))
     }
 
     // MARK: - Table view data source
