@@ -12,8 +12,8 @@ import SwiftTask
 import Himotoki
 
 struct ItemsRepository: Repository {
-    func list() -> Task<Void, [Item], NSError> {
-        return Task<Void, [Item], NSError> { progress, fulfill, reject, configure in
+    func list() -> Task<Void, [Item], FriendlyErrorType> {
+        return Task<Void, [Item], FriendlyErrorType> { progress, fulfill, reject, configure in
             Alamofire.request(.GET, "https://qiita.com/api/v2/items").responseJSON { response in
                 switch response.result {
                 case .Success(let value):
@@ -24,16 +24,14 @@ struct ItemsRepository: Repository {
                                 let item = try decode(object) as Item
                                 items.append(item)
                             } catch DecodeError.MissingKeyPath(let keyPath) {
-                                reject(Error.errorWithCode(.DecodeFailed, failureReason: "Failed to decode \(keyPath)"))
-                                break
+                                reject(ApplicationError.DecodeFailed(keyPath.components))
                             } catch {
-                                reject(Error.errorWithCode(.SomethingWrong, failureReason: ""))
-                                break
+                                reject(ApplicationError.SomethingWrong)
                             }
                         }
                         fulfill(items)
                     } else {
-                        reject(Error.errorWithCode(.DecodeFailed, failureReason: "Failed to decode the root"))
+                        reject(ApplicationError.DecodeFailed(["root"]))
                     }
                 case .Failure(let error):
                     reject(error)

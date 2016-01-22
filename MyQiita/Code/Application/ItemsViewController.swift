@@ -31,7 +31,7 @@ class ItemsViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    private func showErrorDescription(error: NSError?, isCanceled: Bool) {
+    private func showErrorDescription(error: FriendlyErrorType?, isCanceled: Bool) {
         if isCanceled {
             return
         }

@@ -12,16 +12,16 @@ import SwiftTask
 protocol Repository {
     typealias Domain
     
-    func list() -> Task<Void, [Domain], NSError>
-    func find(id: Int) -> Task<Void, Domain, NSError>
+    func list() -> Task<Void, [Domain], FriendlyErrorType>
+    func find(id: Int) -> Task<Void, Domain, FriendlyErrorType>
 }
 
 extension Repository {
-    func list() -> Task<Void, [Domain], NSError> {
+    func list() -> Task<Void, [Domain], FriendlyErrorType> {
         fatalError("-list() is not implemented.")
     }
     
-    func find(id: Int) -> Task<Void, Domain, NSError> {
+    func find(id: Int) -> Task<Void, Domain, FriendlyErrorType> {
         fatalError("-find(id:) is not implemented.")
     }
 }
